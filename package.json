@@ -1,0 +1,13 @@
+{
+  "name": "ushas-ecommerce",
+  "private": true,
+  "packageManager": "pnpm@9.15.4",
+  "scripts": {
+    "dev:storefront": "pnpm --filter @ushas/storefront dev",
+    "build": "node api.js && pnpm -r build",
+    "lint": "pnpm -r lint"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.3"
+  }
+}

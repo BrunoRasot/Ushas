@@ -1,0 +1,52 @@
+import type { Product, ProductCategory } from '@ushas/types'
+
+export const categories: ProductCategory[] = [
+  { id: 'labiales', name: 'Labiales', slug: 'labiales', description: 'Color y cuidado para tus labios.' },
+  { id: 'sombras', name: 'Sombras', slug: 'sombras', description: 'Miradas que hablan por ti.' },
+  { id: 'ojos', name: 'Ojos', slug: 'ojos', description: 'Máscara, delineadores y definición.' },
+  { id: 'rostro', name: 'Rostro', slug: 'rostro', description: 'Bases, rubor e iluminadores.' },
+  { id: 'contorno', name: 'Contorno', slug: 'contorno', description: 'Define y da dimensión a tu rostro.' },
+  { id: 'corrector', name: 'Corrector', slug: 'corrector', description: 'Cobertura para una piel uniforme.' },
+  { id: 'delineadores', name: 'Delineadores', slug: 'delineadores', description: 'Precisión para ojos y cejas.' },
+  { id: 'pestanas', name: 'Pestañas', slug: 'pestanas', description: 'Volumen y definición para tu mirada.' },
+  { id: 'iluminadores', name: 'Iluminadores', slug: 'iluminadores', description: 'Luz para destacar tus facciones.' },
+  { id: 'accesorios', name: 'Accesorios', slug: 'accesorios', description: 'Herramientas para tu rutina.' },
+  { id: 'kits', name: 'Kits', slug: 'kits', description: 'Combinaciones listas para regalar o probar.' },
+  { id: 'skincare', name: 'Skincare', slug: 'skincare', description: 'Tu ritual de cuidado diario.' }
+]
+
+export const products: Product[] = [
+  { id: 'p1', slug: 'liquid-blush-coral', name: 'Liquid Blush Coral', category: 'Rostro', description: 'Colorete líquido de acabado fresco y construible.', price: 18.9, originalPrice: 24.9, image: '/images/ushas/liquid.png', badge: '-24%', rating: 4.9, reviews: 128, stock: 24 },
+  { id: 'p2', slug: 'fire-attitude-lipstick', name: 'Fire Attitude Lipstick', category: 'Labiales', description: 'Labial líquido de color intenso y textura ligera.', price: 35.9, image: '/images/ushas/lipstick.png', badge: 'Más vendido', rating: 4.8, reviews: 94, stock: 16 },
+  { id: 'p3', slug: 'setting-spray-pink', name: 'Setting Spray Pink', category: 'Rostro', description: 'Fijador que prolonga tu maquillaje con un acabado natural.', price: 19.9, image: '/images/ushas/spray.png', rating: 4.7, reviews: 63, stock: 42 },
+  { id: 'p4', slug: 'hand-cream-strawberry', name: 'Hand Cream Strawberry', category: 'Skincare', description: 'Crema de manos nutritiva con aroma a fresa.', price: 21.9, image: '/images/ushas/cream.png', badge: 'Nuevo', rating: 5, reviews: 31, stock: 8 },
+  { id: 'p5', slug: 'makeup-remover-rose', name: 'Makeup Remover Rose', category: 'Skincare', description: 'Agua limpiadora suave para rostro, labios y ojos.', price: 15.9, image: '/images/ushas/removedor.png', rating: 4.6, reviews: 76, stock: 30 },
+  { id: 'p6', slug: 'liquid-blush-pink', name: 'Liquid Blush Pink', category: 'Rostro', description: 'Color líquido para un rubor de aspecto natural.', price: 12.9, image: '/images/ushas/liquid.png', rating: 4.8, reviews: 103, stock: 38 },
+  { id: 'p7', slug: 'labial-liquido-tonos-nude', name: 'Labial Líquido - Tonos Nude', category: 'Labiales', description: 'Labial líquido USHAS de tonos nude para un look versátil.', price: 25.0, image: '/images/catalog/labial-liquido-nude.png', badge: 'Nuevo', rating: 4.8, reviews: 42, stock: 18 },
+  { id: 'p8', slug: 'labial-en-barra-matte', name: 'Labial en Barra Matte USHAS', category: 'Labiales', description: 'Color intenso y acabado matte para todos los días.', price: 28.0, image: '/images/catalog/labial-matte.png', rating: 4.7, reviews: 66, stock: 21 },
+  { id: 'p9', slug: 'brillo-labial-juicy', name: 'Brillo Labial Juicy USHAS', category: 'Labiales', description: 'Brillo jugoso para labios con efecto luminoso.', price: 19.0, image: '/images/catalog/brillo-juicy.png', badge: 'Más vendido', rating: 4.9, reviews: 87, stock: 34 },
+  { id: 'p10', slug: 'mascarilla-labial-arandano', name: 'Mascarilla Labial USHAS Arándano', category: 'Labiales', description: 'Tratamiento labial para una rutina de cuidado nocturna.', price: 22.0, image: '/images/catalog/mascarilla-labial.png', rating: 4.6, reviews: 35, stock: 12 },
+  { id: 'p11', slug: 'rubor-iluminador-ushas', name: 'Rubor Iluminador USHAS', category: 'Rostro', description: 'Rubor e iluminador para un acabado radiante.', price: 24.0, image: '/images/catalog/rubor-iluminador.png', rating: 4.8, reviews: 59, stock: 17 },
+  { id: 'p12', slug: 'rubor-aurora-3-en-1', name: 'Rubor Aurora 3 en 1 USHAS', category: 'Rostro', description: 'Producto multiuso para sumar color y luminosidad.', price: 29.0, image: '/images/catalog/rubor-aurora.png', badge: 'Nuevo', rating: 4.9, reviews: 28, stock: 10 },
+  { id: 'p13', slug: 'polvo-compacto-tonos-morenos', name: 'Polvo Compacto USHAS - Tonos Morenos', category: 'Rostro', description: 'Polvo compacto para sellar y unificar el maquillaje.', price: 27.0, image: '/images/catalog/polvo-morenos.png', rating: 4.7, reviews: 51, stock: 27 },
+  { id: 'p14', slug: 'primer-serum-ushas', name: 'Primer Serum USHAS', category: 'Rostro', description: 'Prebase ligera que prepara el rostro antes del maquillaje.', price: 31.0, image: '/images/catalog/primer-serum.png', rating: 4.8, reviews: 49, stock: 14 },
+  { id: 'p15', slug: 'sombra-ojos-9-colores', name: 'Sombra de Ojos 9 Colores USHAS', category: 'Sombras', description: 'Paleta compacta de nueve colores para looks creativos.', price: 35.0, image: '/images/catalog/sombra-9.png', rating: 4.8, reviews: 72, stock: 19 },
+  { id: 'p16', slug: 'sombra-ojos-12-colores', name: 'Sombra de Ojos 12 Colores USHAS', category: 'Sombras', description: 'Paleta de doce colores en tonos variados.', price: 42.0, image: '/images/catalog/sombra-12.png', badge: 'Más vendido', rating: 4.9, reviews: 91, stock: 22 },
+  { id: 'p17', slug: 'mascara-doble-volumen', name: 'Máscara Doble para Volumen USHAS', category: 'Ojos', description: 'Máscara de pestañas para un efecto de volumen definido.', price: 26.0, image: '/images/catalog/mascara-volumen.png', rating: 4.7, reviews: 68, stock: 31 },
+  { id: 'p18', slug: 'set-mascara-delineador', name: 'Set de Máscara y Delineador USHAS', category: 'Ojos', description: 'Dúo esencial para resaltar tu mirada.', price: 33.0, image: '/images/catalog/set-mascara-delineador.png', rating: 4.8, reviews: 40, stock: 13 },
+  { id: 'p19', slug: 'agua-miscelar-rosas', name: 'Agua Micelar de Rosas USHAS', category: 'Skincare', description: 'Limpieza suave para rostro, labios y ojos.', price: 21.0, image: '/images/catalog/agua-rosas.png', rating: 4.9, reviews: 112, stock: 35 },
+  { id: 'p20', slug: 'agua-miscelar-aloe', name: 'Agua Micelar USHAS Aloe Vera', category: 'Skincare', description: 'Limpia y refresca con una sensación ligera.', price: 23.0, image: '/images/catalog/agua-aloe.png', rating: 4.7, reviews: 57, stock: 26 },
+  { id: 'p21', slug: 'parche-para-acne', name: 'Parche para Acné USHAS', category: 'Skincare', description: 'Parches discretos para complementar tu rutina facial.', price: 16.0, image: '/images/catalog/parche-acne.png', badge: 'Nuevo', rating: 4.6, reviews: 24, stock: 40 },
+  { id: 'p22', slug: 'spray-fijador-maquillaje', name: 'Spray Fijador de Maquillaje USHAS', category: 'Rostro', description: 'Ayuda a prolongar la duración de tu maquillaje.', price: 25.0, image: '/images/catalog/spray-fijador.png', rating: 4.8, reviews: 81, stock: 29 },
+  { id: 'p23', slug: 'contorno-polvo-ushas', name: 'Contorno en Polvo USHAS', category: 'Contorno', description: 'Polvo de contorno para definir el rostro con acabado natural.', price: 26.0, image: '/images/catalog/polvo-morenos.png', rating: 4.7, reviews: 38, stock: 18 },
+  { id: 'p24', slug: 'corrector-liquido-ushas', name: 'Corrector Líquido USHAS', category: 'Corrector', description: 'Cobertura construible para iluminar y corregir.', price: 22.0, image: '/images/ushas/liquid.png', rating: 4.6, reviews: 46, stock: 23 },
+  { id: 'p25', slug: 'delineador-cejas-ushas', name: 'Delineador de Cejas USHAS', category: 'Delineadores', description: 'Define tus cejas con trazos precisos.', price: 18.0, image: '/images/catalog/set-mascara-delineador.png', rating: 4.7, reviews: 33, stock: 25 },
+  { id: 'p26', slug: 'delineador-ojos-ushas', name: 'Delineador de Ojos USHAS', category: 'Delineadores', description: 'Trazo intenso para looks definidos.', price: 17.0, image: '/images/catalog/set-mascara-delineador.png', rating: 4.6, reviews: 41, stock: 27 },
+  { id: 'p27', slug: 'mascara-pestanas-ushas', name: 'Máscara de Pestañas USHAS', category: 'Pestañas', description: 'Pestañas definidas y con volumen.', price: 24.0, image: '/images/catalog/mascara-volumen.png', badge: 'Más vendido', rating: 4.8, reviews: 89, stock: 32 },
+  { id: 'p28', slug: 'iluminador-metalico-ushas', name: 'Iluminador Metálico USHAS', category: 'Iluminadores', description: 'Brillo modulable para pómulos, ojos y cuerpo.', price: 23.0, image: '/images/catalog/rubor-iluminador.png', rating: 4.7, reviews: 37, stock: 16 },
+  { id: 'p29', slug: 'kit-mascara-delineador-ushas', name: 'Kit Máscara y Delineador USHAS', category: 'Kits', description: 'Dúo práctico para completar tu maquillaje de ojos.', price: 39.0, image: '/images/catalog/set-mascara-delineador.png', badge: 'Kit', rating: 4.8, reviews: 55, stock: 14 },
+  { id: 'p30', slug: 'kit-labios-ushas', name: 'Kit de Labios USHAS', category: 'Kits', description: 'Combinación de color y brillo para tus labios.', price: 45.0, image: '/images/ushas/lipstick.png', badge: 'Kit', rating: 4.9, reviews: 64, stock: 11 },
+  { id: 'p31', slug: 'esponja-maquillaje-ushas', name: 'Esponja de Maquillaje USHAS', category: 'Accesorios', description: 'Aplicación uniforme para productos líquidos y en crema.', price: 13.0, image: '/images/ushas/cream.png', rating: 4.6, reviews: 29, stock: 42 },
+  { id: 'p32', slug: 'cosmetiquera-ushas', name: 'Cosmetiquera USHAS', category: 'Accesorios', description: 'Organiza tus esenciales de belleza donde vayas.', price: 29.0, image: '/images/ushas/cream.png', rating: 4.7, reviews: 22, stock: 15 },
+  { id: 'p33', slug: 'primer-iluminador-ushas', name: 'Primer Iluminador USHAS', category: 'Iluminadores', description: 'Prepara la piel y aporta una luminosidad sutil.', price: 28.0, image: '/images/catalog/primer-serum.png', rating: 4.7, reviews: 35, stock: 20 }
+]
