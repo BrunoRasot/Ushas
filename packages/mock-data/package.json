@@ -1,0 +1,7 @@
+{
+  "name": "@ushas/mock-data",
+  "version": "0.0.1",
+  "private": true,
+  "exports": { ".": "./src/index.ts" },
+  "dependencies": { "@ushas/types": "workspace:*" }
+}
